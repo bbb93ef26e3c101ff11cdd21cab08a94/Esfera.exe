@@ -1,8 +1,9 @@
 # Esfera.exe
 The best GDI Malware i ever made in 5 months
-NOTE: 
-# - The creator does not take any responsibilities for any damages caused by using this malicious piece of software, outside of a virtual environment
-# - Esfera does not work on Windows with DWM(Desktop Window Manager): Windows 7, Windows 8/8.1, Windows 10 and Windows 11 
+
+# NOTE: 
+- The creator does not take any responsibilities for any damages caused by using this malicious piece of software, outside of a virtual environment
+- Esfera does not work on Windows with DWM(Desktop Window Manager): Windows 7, Windows 8/8.1, Windows 10 and Windows 11 
 
 # Features:
 - Written in C and x86 assembly
