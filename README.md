@@ -13,7 +13,7 @@ The best GDI Malware i ever made in 5 months
 - Sets itself as a critical process
 - Shutdowns pc through undocumented NT functions
 - Deletes all registrys, and critical files such as: ntoskrnl, hal.dll, winresume.exe, winload.exe, logonui.exe and more...
-- An antidebugger(don't try)
+- An anti debugger(don't try)
 - A dated timed payload(guess the execution date :trol:)
 
 # Debug Panel:
